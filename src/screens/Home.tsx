@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { VStack, HStack, Heading, Text, FlatList, Center, useToast } from 'native-base';
 import { useFocusEffect } from '@react-navigation/native';
 
+import { from, range } from 'linq-to-typescript';
+
 import { useNavigation } from '@react-navigation/native';
 import { AppNavigatorRoutesProps } from '@routes/app.routes';
 
@@ -55,6 +57,13 @@ export function Home() {
 
             const { data } = await api.get(`/exercises/bygroup/${groupSelected}`);
             setExercises(data);
+
+            //const filterGroup = from(exercises).toArray();
+            //console.log(filterGroup);
+            // filterGroup.forEach(f => {
+            //    console.log(f);
+            // });
+
 
         } catch (error) {
             const isAppError = error instanceof AppError;

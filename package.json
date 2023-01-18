@@ -11,15 +11,18 @@
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.2",
     "@hookform/resolvers": "^2.9.10",
+    "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-navigation/bottom-tabs": "^6.4.0",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.1",
     "axios": "^1.2.0",
+    "eslint": "^8.32.0",
     "expo": "~47.0.6",
     "expo-file-system": "~15.1.1",
     "expo-font": "~11.0.1",
     "expo-image-picker": "~14.0.2",
     "expo-status-bar": "~1.4.2",
+    "linq-to-typescript": "^10.0.0",
     "native-base": "^3.4.22",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -29,8 +32,7 @@
     "react-native-screens": "~3.18.0",
     "react-native-svg": "13.4.0",
     "react-native-web": "~0.18.9",
-    "yup": "^0.32.11",
-    "@react-native-async-storage/async-storage": "~1.17.3"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
